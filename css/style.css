@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    grid-template-areas: "header"
+        "menu"
+        "main"
+        "Productos Destacados"
+        "formulario"
+        "footer";
+    grid-template-rows: auto auto 5fr auto auto;
+    grid-column: 1fr;
+
+    header {
+        grid-area: header;
+        background-color: #f3f6f8;
+        padding: 1rem;
+
+        h2 {
+            /* background-color: rgb(248, 244, 244);> */
+            text-align: center;
+
+        }
+    }
+
+    nav {
+        grid-area: menu;
+        background-color: beige;
+        padding: 1rem;
+        font-weight: 400;
+
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                display: inline;
+                margin: 1rem;
+                padding: o 1rem;
+
+                a {
+                    text-decoration: none
+                }
+
+                & a:hover {
+                    color: aqua;
+                    background-color: rgb(163, 163, 48);
+                }
+            }
+        }
+
+        ;
+
+    }
+
+    main {
+        grid-area: main;
+        background-image: url("/assets/img/Relojrecortado.jpeg");
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        font-size: xx-large;
+        font-family: 'Times New Roman', Times, serif;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+
+    }
+
+    section1 {
+        grid-area: formulario;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+    
+        
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    }
+
+    section {
+        grid-area: Productos Destacados;
+        text-align: center;
+
+        h2 {
+            margin: 2rem;
+            color: #666;
+
+        }
+
+        h3 {
+            margin: 2rem;
+            color: #666;
+
+        }
+
+        p {
+            margin: 2rem;
+            color: #666;
+            justify-content: space-evenly;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+
+
+            .card {
+
+                width: 200px;
+
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        border-radius: 0.5rem 0.5rem 0 0;
+                        width: auto;
+                        height: 200px;
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #63aee0;
+        padding: 1rem;
+        margin-top: 2rem;
+
+        p {
+            text-align: center;
+        }
+    }
+
+
