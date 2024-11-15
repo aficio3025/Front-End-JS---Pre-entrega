@@ -69,7 +69,7 @@ body {
 
     main {
         grid-area: main;
-        background-image: url("/assets/img/Relojrecortado.jpeg");
+        background-image: url("../assets/img/Relojrecortado.jpeg");
         height: 80vh;
         background-repeat: no-repeat;
         background-size: cover;
@@ -154,7 +154,7 @@ body {
 
     section {
         grid-area: Productos Destacados;
-        text-align: center;
+        text-align:center;
 
         h2 {
             margin: 2rem;
@@ -178,6 +178,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            text-align: left;
 
 
 
