@@ -1,5 +1,6 @@
 Pre Entrega de Proyecto
 Alumno: Adolfo Sarate
+Correo: adolfosarate@gmail.com
 Curso: Front End JS 
 Comision #24228
 Titulo del proyecto: "Tienda virtual steampunk"
