@@ -17,9 +17,7 @@
 body {
     grid-template-areas: "header"
         "menu"
-        "main"
-        "Productos Destacados"
-        "resenia"
+        "formulario"
         "footer";
     grid-template-rows: auto auto 5fr auto auto;
     grid-column: 1fr;
@@ -67,76 +65,72 @@ body {
 
     }
 
-    main {
-        grid-area: main;
-        background-image: url("../assets/img/Relojrecortado.jpeg");
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        font-size: xx-large;
-        font-family: 'Times New Roman', Times, serif;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    
 
-
-
-    }  
-   
-
+    
     section {
-        grid-area: Productos Destacados;
-        text-align:center;
+        grid-area: formulario;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+   
         
 
-        h2 {
-            margin: 2rem;
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
             color: #666;
-
         }
 
-        h3 {
-            margin: 2rem;
-            color: #666;
-
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
         }
 
-        p {
-            margin: 2rem;
-            color: #666;
-            justify-content: space-evenly;
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #007bff;
+            outline: none;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            text-align: left;
-
-
-
-            .card {
-
-                width: 200px;
-
-
-                a {
-                    text-decoration: none;
-
-                    img {
-                        border-radius: 0.5rem 0.5rem 0 0;
-                        width: auto;
-                        height: 200px;
-
-                    }
-
-                }
-            }
-
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
         }
 
+        button:hover {
+            background-color: #0056b3;
+        }
     }
 
     
