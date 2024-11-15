@@ -20,6 +20,7 @@ body {
         "main"
         "Productos Destacados"
         "formulario"
+        "resenia"
         "footer";
     grid-template-rows: auto auto 5fr auto auto;
     grid-column: 1fr;
@@ -82,6 +83,17 @@ body {
         flex-direction: column;
 
 
+
+    }
+
+    section2 {
+        grid-area: resenia;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
     }
 
